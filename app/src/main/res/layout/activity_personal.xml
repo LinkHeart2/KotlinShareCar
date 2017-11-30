@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@mipmap/personl_background"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/ivCancel"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@mipmap/cancel"/>
+
+            <LinearLayout
+                android:id="@+id/btnLogout"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="17dp"
+                    android:src="@mipmap/mine_logout_btn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="退出"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/head_portrait_background">
+
+            <com.hjx.android.kotlinsharecar.view.widget.CircleImageView
+                android:id="@+id/circleImageView_center_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/default_header_img"
+                app:civ_border_color="#00000000"
+                app:civ_border_width="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/circleImageView_center_pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_order"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="我的订单"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_my_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_wallet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="我的钱包"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_driving_certification"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/driving_certification"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="驾驶认证"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_personal_data"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/personal_data"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="个人资料"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_use_guide"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/use_guide"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="使用指南"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_customer_service_center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/customer_service_center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/custom_service"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/DivideView"/>
+
+
+            <LinearLayout
+                android:id="@+id/iv_recommend_a_prize"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/recommend_a_prize"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="推荐有奖"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_activity_center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/activity_center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="活动中心"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/DivideView"/>
+
+            <LinearLayout
+                android:id="@+id/iv_personal_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/touch_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/personal_setting"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="设置"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/next"/>
+            </LinearLayout>
+
+            <View
+                style="@style/DivideView"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
